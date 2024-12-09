@@ -1,5 +1,5 @@
-## DISCUSIÓN Y ANÁLISIS: IMPLEMENTACIÓN DE REACTJS EN PROYECTO HOSPITAL
-### Grupo 4: Matias Espinoza, Nicolar Jaramillo, Javiera Allende, Natalia Albornoz y Carla García
+#DISCUSIÓN Y ANÁLISIS: IMPLEMENTACIÓN DE REACTJS EN PROYECTO HOSPITAL
+## Grupo 4: Matias Espinoza, Nicolar Jaramillo, Javiera Allende, Natalia Albornoz y Carla García
  
 ### 1. ReactJS y su Aplicación en el Proyecto del Hospital
 
@@ -39,3 +39,22 @@ Por ejemplo, un componente "Ficha de Paciente" podría reutilizarse en distintas
     - El sitio web del hospital puede crecer en funcionalidades y secciones, y ReactJS facilitará la adición de nuevas características y el mantenimiento del código.
 
 En resumen, una SPA desarrollada con ReactJS proporcionaría una experiencia de usuario superior en el sistema del hospital, con una navegación fluida, carga rápida de datos y una interfaz dinámica que se adapta a las necesidades de los usuarios.
+
+
+### 3. Manejo del DOM Virtual en la Web del Hospital (1 punto)
+
+El DOM virtual es una de las características clave de React que contribuye significativamente a la mejora del rendimiento de las aplicaciones web, y en el caso de la aplicación web del hospital, sus ventajas son particularmente relevantes. Imaginemos un escenario donde un usuario (médico, paciente o personal administrativo) está navegando por el sitio web del hospital. La aplicación, construida como una SPA (Single Page Application) con React, maneja diferentes secciones como "Consultas," "Citas," "Servicios," etc.
+
+¿Cómo funciona el DOM virtual para optimizar la experiencia?
+- Representación en memoria: El DOM virtual es una representación ligera en memoria del DOM real del navegador. Actúa como una copia intermedia donde React realiza los cambios de forma rápida y eficiente antes de actualizar el DOM real.
+- Actualizaciones Eficientes: Cuando un usuario interactúa con la aplicación, por ejemplo, al navegar a una nueva sección o filtrar información, React actualiza el DOM virtual con los cambios necesarios.
+    - Luego, React compara el DOM virtual actualizado con la versión anterior y calcula las diferencias.
+    - En lugar de re-renderizar toda la página, React solo aplica las diferencias al DOM real, minimizando las operaciones costosas y mejorando significativamente el rendimiento.
+- Eliminación de Recargas Innecesarias: En una SPA, la navegación entre secciones no implica recargar la página completa.
+    - React se encarga de actualizar dinámicamente sólo las secciones relevantes de la interfaz, manteniendo una experiencia fluida y sin interrupciones.
+    - Esto es especialmente importante en el contexto de una aplicación médica, donde la información debe ser accesible de forma rápida y sin demoras.
+- Ejemplo Práctico:
+    - Navegación: Un médico accede a la sección "Consultas" para revisar el historial de un paciente. Luego, navega a la sección "Citas" para programar una nueva consulta. En una SPA con React, solo se actualizarían las secciones "Consultas" y "Citas", sin recargar la página completa, lo que resulta en una transición rápida y sin interrupciones.
+    - Filtrado de Datos: Un administrador busca un paciente específico en una lista extensa. Al escribir el nombre en un campo de búsqueda, React actualiza dinámicamente la lista en tiempo real, mostrando solo los resultados coincidentes, sin necesidad de enviar una nueva solicitud al servidor ni recargar la página.
+
+En resumen, el DOM virtual de React es un componente esencial para lograr una aplicación web del hospital de alto rendimiento. Su capacidad para realizar actualizaciones precisas y eficientes, sin recargar la página completa, se traduce en una navegación fluida, una carga de datos rápida y una experiencia de usuario óptima.

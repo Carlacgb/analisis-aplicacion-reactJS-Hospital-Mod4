@@ -17,3 +17,6 @@ Esto resulta en una experiencia de usuario más fluida y rápida, similar a una 
 - Beneficios adicionales: JSX (JavaScript Syntax Extension) facilita la escritura de código que se asemeja a HTML, mejorando la legibilidad. El flujo de datos unidireccional hace que la aplicación sea más predecible y fácil de depurar.
 
 En resumen, la naturaleza declarativa, el enfoque basado en componentes y su capacidad para construir SPAs hacen de ReactJS una opción ideal para un sitio web de hospital moderno y eficiente.
+
+
+### 2. Ventajas de las SPA en un Sistema de Hospital (1 punto)
